@@ -1,0 +1,32 @@
+{
+  "order": [
+    {
+      "orderId": "ORD101",
+      "customerId": "C101",
+      "product": "Laptop",
+      "quantity": 0,
+      "orderType": "Domestic"
+    },
+    {
+      "orderId": "ORD102",
+      "customerId": "C102",
+      "product": "Mobile",
+      "quantity": 2,
+      "orderType": "International"
+    },
+    {
+      "orderId": "ORD103",
+      "customerId": "C103",
+      "product": "Tablet",
+      "quantity": 1,
+      "orderType": "Domestic"
+    },
+	{
+	  "orderId": "ORD104",
+      "customerId": "C104",
+      "product": "Mouse",
+      "quantity": 1,
+      "orderType": "International"
+	}
+  ]
+}
