@@ -1,0 +1,72 @@
+{
+  "info": {
+    "_collection_link": "https://go.postman.co/collection/56296028-3ec289e6-2308-4c94-b71e-f8c8e55d8281?source=collection_link",
+    "_exporter_id": "56296028",
+    "_postman_id": "3ec289e6-2308-4c94-b71e-f8c8e55d8281",
+    "description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+    "name": "My Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Ecommerce sender",
+      "request": {
+        "auth": {
+          "basic": [
+            {
+              "key": "username",
+              "type": "string",
+              "value": "sb-a1567aa5-bef4-48ed-8a64-993aa4d9a34b!b152412|it-rt-87953292trial!b196"
+            },
+            {
+              "key": "password",
+              "type": "string",
+              "value": "{{auth_password_0h4u}}"
+            }
+          ],
+          "type": "basic"
+        },
+        "body": {
+          "mode": "raw",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          },
+          "raw": "{\r\n  \"orders\": [\r\n    {\r\n      \"orderId\": \"ORD101\",\r\n      \"customerId\": \"C101\",\r\n      \"product\": \"Laptop\",\r\n      \"quantity\": 1,\r\n      \"orderType\": \"Domestic\"\r\n    },\r\n    {\r\n      \"orderId\": \"ORD102\",\r\n      \"customerId\": \"C102\",\r\n      \"product\": \"Mobile\",\r\n      \"quantity\": 2,\r\n      \"orderType\": \"International\"\r\n    },\r\n    {\r\n      \"orderId\": \"ORD103\",\r\n      \"customerId\": \"C103\",\r\n      \"product\": \"Tablet\",\r\n      \"quantity\": 1,\r\n      \"orderType\": \"Domestic\"\r\n    }\r\n  ]\r\n}\r\n"
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "method": "POST",
+        "url": {
+          "host": [
+            "87953292trial",
+            "it-cpitrial03-rt",
+            "cfapps",
+            "ap21",
+            "hana",
+            "ondemand",
+            "com"
+          ],
+          "path": [
+            "http",
+            "order-processing"
+          ],
+          "protocol": "https",
+          "raw": "https://87953292trial.it-cpitrial03-rt.cfapps.ap21.hana.ondemand.com/http/order-processing"
+        }
+      },
+      "response": []
+    },
+
+    }
+  ]
+}
